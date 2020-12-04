@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block tilte %}
+    Eliminar emplado
+{% endblock tilte %}
+
+
+{% block content %}
+    {% include 'includes/header.html' %}
+
+    <div class="grid-container">
+        <div class="grid-x">
+            <h1 class="cell">Elminar Empleado: {{ object.first_name }}</h1>
+            <form class="cell" action="" method="POST">{% csrf_token%}
+                <div class="callout secondary">
+                    <h5>Confirme que desea eliminar e este empleado</h5>
+                    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                    <button type="submit" class="alert button">Confirmar</button>
+                  </div>
+                
+                </form>
+        </div>
+    </div>
+
+{% endblock content %}
+    
+    
+
