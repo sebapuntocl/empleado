@@ -1,7 +1,7 @@
 from django.db import models
 from applications.departamento.models import Departamento #llamamos a la tabla departamnto
 
-from ckeditor.fields import RichTextField # importa CKEditor
+#from .fields import RichTextField # importa CKEditor
 
 # Create your models here.
 class Habilidades(models.Model):
