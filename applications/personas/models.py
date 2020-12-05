@@ -34,7 +34,7 @@ class Empleado(models.Model):
     departamento = models.ForeignKey(Departamento, on_delete=models.CASCADE) #crea la relacion con tabla departamento
     avatar = models.ImageField(upload_to='empleado', blank=True, null=True)
     habilidades = models.ManyToManyField(Habilidades) #crea la relacion muchos a muchos con la taba habilidades
-    # hoja_vida = RichTextField() # este campo se va a crear con ckeditor. despues hacer denuevo la migracion
+    #hoja_vida = RichTextField() # este campo se va a crear con ckeditor. despues hacer denuevo la migracion
     
     class Meta:
         verbose_name = 'Empleado' #Cambia el nombre de la tabla en el admi
